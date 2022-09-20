@@ -2,15 +2,13 @@
 
 void function(int sum)
 {
-    for(int i=0;i<11;i++){
-        sum += i;
-    }
-    return sum;
+    for(int i=0;i<11;i++) sum += i;
 }
 int main()
 {
     printf("hello world");
     int sum=0;
-    sum = function(sum);
+    function(sum);
+    printf("sum= %d",sum);
     return 0;
 }
